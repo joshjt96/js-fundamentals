@@ -37,3 +37,4 @@ for (let elt of arr) {
 arr.forEach((elt, i) => {
   // i is index, elt is element
 });
+
