@@ -75,7 +75,7 @@ const secondNum = prompt('Second Number')
 function multiply(number1, number2) {
   return number1 * number2;
 }
-document.getElementById("demo").innerHTML = multiply(firstNum, secondNum);
+document.getElementById("demo").textContent = multiply(firstNum, secondNum);
 
     // Function parameters: the names listed in brackets in the function definition after the name of the function. 
     // These are arguments which are the values passed to and recieved by the function. In the multiply function above, (number 1, number2) are the parameters.
@@ -88,3 +88,46 @@ document.getElementById("demo").innerHTML = multiply(firstNum, secondNum);
 // Explain the circumstances under which promises are better than callbacks
 // Explain what the .then() function does
 
+// Return statement: Specifies a return value for a function.
+// This function will return the string 'hello' as it's value when console logged:
+
+function test() {
+    return 'hello';
+}
+
+console.log(test());
+
+document.getElementById("h2").textContent = (test());
+
+// Whenever return statement is used, the function execution stops and we exit the function call block.
+// However, it can be used twice in one function if they're in seperate code blocks. For example:
+
+let login = function(password) {
+    if (password == "test123") {
+        return "Success";
+    } else {
+        return "Fail";
+    };
+};
+
+const login2 = function(password) {
+    if (password == "test456") {
+        return "Login in successful";
+    } else {
+        return "Incorrect Password";
+    };
+};
+
+// const loginFunction(password) {
+//     if (password == "testing") {
+//         return "Correct password, logged in successfully"
+//     } else {
+//         return "Incorrect password, login unsuccessful"
+//     }
+// }
+
+// console.log(loginFunction(testing));
+
+function add(x, y) {
+    return x + y;
+}
